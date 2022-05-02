@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="color"></div>
+    
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="#"> Clinick </a></div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="#about"> about </a></li>
+                <li><a href="#" id="profile"> profile </a></li>
+                <li><a href="#" id="booksched"> schedule/book </a></li>
+                <li><a href="#" id="myschedule"> my schedule </a></li>
+                <input type="submit" value="Sign in" class="signin" id="show-signin">
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="home-content">
+        <h4> Easy Clinic Scheduling </h4>
+        <h1> Project Clinick </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque deserunt corporis rerum officia placeat aspernatur doloremque voluptates culpa consequatur laborum.</p>
+        <a href="#" id="book"><input type="submit" value="BOOK NOW" class="book"></a>
+        <div class="image"> <img src="haha.jpg"></div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="content">
+            <div class="title"> Easy Scheduling System </div>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat eligendi quis consequuntur est cum. Incidunt deleniti fugit laboriosam necessitatibus consectetur reiciendis error, fuga dolorum adipisci accusamus alias molestiae est. Earum cumque dolorem adipisci dolor molestiae? Ex consectetur vel recusandae soluta architecto iste, ratione repellendus consequatur expedita cum, facere quaerat id, laboriosam esse iure natus ad praesentium. Possimus velit, sed inventore ipsum sint ducimus impedit delectus sunt aperiam fugit soluta consequuntur molestias magnam aliquam ab amet! Culpa iusto placeat reiciendis.</p>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius accusamus laudantium rem quisquam iste molestias at sint recusandae maiores assumenda esse hic quod dolore quos voluptatibus consequatur aliquam, quam earum. Eaque labore eius iusto voluptatem, tempora modi quaerat quo quam consequuntur. Tempore, cumque voluptate exercitationem libero blanditiis maxime asperiores doloremque.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod vel dolor odit ratione incidunt officia quas et voluptas a qui, sapiente laborum. Vero nobis quia dicta quidem veniam ipsam voluptas dolore iure distinctio reiciendis ullam aut eum deserunt dolores qui, officiis eligendi quae nihil repellendus atque sed? Consequuntur iure iusto nostrum laudantium in labore quasi nemo eum, corporis totam nulla debitis neque voluptate? Alias nesciunt rem iste aut reiciendis quos aspernatur, sunt corporis accusamus reprehenderit perspiciatis animi ipsam, impedit, voluptas maxime deserunt tenetur libero? Deserunt odio nesciunt ullam, illo consequatur accusamus illum dolorem ratione delectus, exercitationem odit ea cumque perferendis?</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe pariatur, dignissimos aliquid natus unde veritatis nemo dolorum! Accusamus, fugiat aut!</p>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ut iure sunt aspernatur atque, laborum ipsum iste nostrum numquam ipsa facere quas aliquid! Sit, amet blanditiis modi quas ipsum ad? Sed nemo illum placeat quia fuga, recusandae repudiandae corrupti commodi eligendi maiores pariatur minima eaque sint dolorum nobis perspiciatis? Facilis mollitia sunt, minima quisquam doloribus laboriosam. Sunt, obcaecati ex voluptate eaque ab molestiae explicabo consequuntur id, accusantium unde vero aperiam nesciunt minima sint expedita nemo? At tempore animi quia officiis laborum? Ratione, placeat! Nemo obcaecati, nulla distinctio, voluptatem harum itaque, quibusdam sapiente officia ab non animi eveniet. Quae, hic cumque!</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo accusantium sint maxime sed dolorum illo sequi hic perspiciatis debitis quis ipsa, quisquam earum quidem. Qui eveniet modi eius neque. Quam magni exercitationem atque minus nostrum distinctio at quis nobis iusto fugiat eos laudantium eveniet dolorem, numquam quaerat non et.</p>
+        </div>
+    </div>
+    
+    <div class="pop-up">
+        <div class="close-btn"> &times; </div>
+        <div class="form">
+            <h2> Login <br> <span> login your account. </span></h2>
+                <div class="form-element">
+                    <label for="email"> Email </label>
+                    <input type="text" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-element">
+                    <label for="password"> Password </label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me"> Remember me </label>
+                </div>
+                <div class="form-element">
+                    <a href="home.html"><button> login </button></a>
+                </div>
+                <div class="form-element">
+                    <p> no account? <a href="#"> signup here </a></p>
+                </div>
+        </div>
+    </div>
+
+    <!------------NAVBAR ICON JAVASCRIPT--------------->
+    <script>
+
+        document.querySelector("#show-signin").addEventListener("click", function() {
+        document.querySelector(".pop-up").classList.add("active");
+        });
+        document.querySelector("#book").addEventListener("click", function() {
+        document.querySelector(".pop-up").classList.add("active");
+        });
+        document.querySelector("#profile").addEventListener("click", function() {
+        document.querySelector(".pop-up").classList.add("active");
+        });
+        document.querySelector("#booksched").addEventListener("click", function() {
+        document.querySelector(".pop-up").classList.add("active");
+        });
+        document.querySelector("#myschedule").addEventListener("click", function() {
+        document.querySelector(".pop-up").classList.add("active");
+        });
+        document.querySelector(".pop-up .close-btn").addEventListener("click", function() {
+        document.querySelector(".pop-up").classList.remove("active");
+        });
+
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=> {
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+        }
+        cancelBtn.onclick = ()=> {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+        }
+
+
+        window.onscroll = ()=> {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+
+</body>
+</html>

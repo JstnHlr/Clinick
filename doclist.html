@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-------- NAVIGATION BAR -------->
+
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="home.html"> Clinick </a></div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="#" id="profile"> profile </a></li>
+                <li><a href="book.html" id="booksched"> schedule/book </a></li>
+                <li><a href="#" id="myschedule"> my schedule </a></li>
+                <input type="submit" value="Logout" class="signin">
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-------- TABLE ---------->
+
+    <table id="table-doc-list">
+        <thead>
+            <tr>
+                <th> Name </th>
+                <th> Education </th>
+                <th> Schedule </th>
+                <th> </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td data-label="Name"><a href="#" class="doctor-name"> DR. Ernest Abegail C. Dela Cruz </a></td data-labe;>
+                <td data-label="Education"> Internal Medicine </td>
+                <td data-label="Schedule"> For Appointment only </td>
+                <td data-label=""><a href="makeappointment.php" class="get-app"> Get Appointment </a></td>
+            </tr>
+
+            <tr>
+                <td data-label="Name"><a href="#" class="doctor-name"> DR. Ernest Abegail C. Dela Cruz </a></td>
+                <td data-label="Education"> Internal Medicine </td>
+                <td data-label="Schedule"> For Appointment only </td>
+                <td data-label=""><a href="makeappointment.php" class="get-app"> Get Appointment </a></td>
+            </tr>
+
+            <tr>
+                <td data-label="Name"><a href="#" class="doctor-name"> DR. Ernest Abegail C. Dela Cruz </a></td>
+                <td data-label="Education"> Internal Medicine </td>
+                <td data-label="Schedule"> For Appointment only </td>
+                <td data-label=""><a href="makeappointment.php" class="get-app"> Get Appointment </a></td>
+            </tr>
+
+            <tr>
+                <td data-label="Name"><a href="#" class="doctor-name"> DR. Ernest Abegail C. Dela Cruz </a></td>
+                <td data-label="Education"> Internal Medicine </td>
+                <td data-label="Schedule"> For Appointment only </td>
+                <td data-label=""><a href="makeappointment.php" class="get-app"> Get Appointment </a></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    
+
+
+    <!------------NAVBAR ICON JAVASCRIPT--------------->
+    <script>
+
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=> {
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+        }
+        cancelBtn.onclick = ()=> {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+        }
+
+
+        window.onscroll = ()=> {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+
+</body>
+</html>
