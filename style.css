@@ -726,6 +726,6 @@ a {
                 /* ---------------- DOCTORS CARD ----------- */
 
                 .doctors .profile-container {
-                    display: inline;
+                    display: block;
                 }
             }
